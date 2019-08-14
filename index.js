@@ -21,11 +21,6 @@ function removeToDo(event) {
     event.target.parentNode.remove();
     // let message = document.getElementById("completed-message").innerHTML;
     // alert(message);
-
-    setTimeout(function(){
-        let message = document.getElementById("completed-message").innerHTML;
-        alert(message);
-    }, 2000);
 }
 
 function completeToDo(event) {
@@ -35,4 +30,9 @@ function completeToDo(event) {
     } else {
         event.target.setAttribute("aria-checked", "false");
     }
+    setTimeout(function(){
+        let message = document.getElementById("completed-message").innerHTML;
+        alert(message);
+    }, 2000);
+    removeToDo();
 }
