@@ -19,8 +19,13 @@ function addToDo(event) {
 function removeToDo(event) {
     // since button is child of the item, use code to remove entire list
     event.target.parentNode.remove();
-    let message = document.getElementById("completed-message").innerHTML;
-    alert(message);
+    // let message = document.getElementById("completed-message").innerHTML;
+    // alert(message);
+
+    setTimeout(function(){
+        let message = document.getElementById("completed-message").innerHTML;
+        alert(message);
+    }, 2000);
 }
 
 function completeToDo(event) {
